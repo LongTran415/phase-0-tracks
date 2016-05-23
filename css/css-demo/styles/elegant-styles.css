@@ -39,7 +39,10 @@ A given ID should only be used once in a document.
 A given class can be used multiple times in a document.
 
 */
+h3. {
 
+
+}
 .experience-category, #resume-title {
   font-family: 'Dancing Script', cursive;
   margin-bottom: 0;
