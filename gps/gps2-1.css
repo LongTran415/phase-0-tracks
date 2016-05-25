@@ -1,0 +1,38 @@
+body {
+    font-family: Helvetica;
+    background-image: url(https://openclipart.org/image/2400px/svg_to_png/68803/hendrix.png);
+}
+
+header {
+    font-size: 1.3em;
+    color: blue;
+    background: black;
+    border: dashed;
+}
+
+.column-1 {
+    background: yellow;
+    float: left;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.column-2 {
+    background: red;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding: 10px;
+}
+
+footer {
+    font-size: 1.3em;
+    color: blue;
+    background: pink;
+    display: block;
+    position: relative;
+    top: 1000px;
+}
