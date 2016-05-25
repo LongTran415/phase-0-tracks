@@ -1,0 +1,28 @@
+body {
+    font-family: Helvetica;
+}
+
+header {
+    font-size: 1.3em;
+    color: blue;
+    background: black;
+}
+
+.column-1 {
+    background: yellow;
+    float: left;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    max-width: 500px;
+    padding: 10px;
+    background-image: url(https://openclipart.org/image/2400px/svg_to_png/68803/hendrix.png)
+}
+
+.column-2 {
+    background: red;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding: 10px;
+}
