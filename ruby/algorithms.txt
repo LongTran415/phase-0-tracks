@@ -1,0 +1,28 @@
+Algorithm for doing laundry:
+
+- Start with a dirty hamper full of clothes.
+- Sort laundry into three separate dirty-clothes-piles: colors, whites, and linens.
+- Take first pile, put into washer and add detergent.
+- Every time a wash is complete:
+	- Subtract 1 pile from the dirty-clothes-piles.
+	- Put most recently washed pile into the dryer.
+	- Take cleaned and dried clothes and set on bed.
+	- Repeat until all three dirty-clothes-piles are washed.
+- If you are washing the whites pile:
+	- Add bleach to your detergent
+	- Wash clothes with warm/cold setting
+- Otherwise
+	- If washing linens:
+		- Add fabric softener to your detergent
+		- Wash on hot/cold setting
+	- If washing colors:
+		- Only add detergent.
+		- Wash on cold/cold setting
+- Take empty hamper and set it next to the bed.
+- Separate clean clothes into 4 categories: Tops, Bottoms, underwear/socks, and linens.
+- Fold each category separately.
+- When the first pile is complete, add pile to the empty hamper
+- Repeat until all four categories have filled the hamper.
+
+
+ 
