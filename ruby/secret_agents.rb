@@ -29,13 +29,11 @@ end
 def decrypt(password_name)
 alpha = "abcdefghijklmnopqrstuvwxyz"
 letter = 0
-# current_idx = alpha.index(password_name[letter])
-
 
 while letter < password_name.length
   if password_name[letter] != " "
     password_name[letter] = alpha[alpha.index(password_name[letter]) - 1]
-    #password_name[letter] = alpha[current_idx - 1]
+    
   end
 
 letter += 1
