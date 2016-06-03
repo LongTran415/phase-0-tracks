@@ -1,0 +1,43 @@
+body {
+    background: pink;
+    font-family: Helvetica;
+    display: inline-block;
+}
+
+#section1 {
+    border: dashed 1px;
+    margin: 0 auto;
+    padding: 2px;
+    font-style: italic;
+    background: #ccffff;
+}
+
+    #section2 {
+    border: dashed 1px;
+    margin: 0 auto;
+    padding: 2px;
+    font-style: italic;
+    background: #ccffff;
+}
+
+li {
+    list-style-type: square;
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: 3px;
+}
+
+a:hover {
+    background-color: blue;
+}
+
+th {
+    text-decoration: underline;
+}
+
+td {
+    background-color: #c0c0c0;
+}
