@@ -1,32 +1,35 @@
-
-# make an encryption program that modifies a users input with a method
-# create a data structure that runs the program
-
-
-# # To be completely honest I didnt have enough time this week to complete this challenge. 
-# I thought I would turn in something for now and go back through a do this assignment again.
+# Get users full name
+# #check to see if full name has vowels
+# #check to see if full name has consonants
+#return user new name encrypted
 
 
-def alias_key(alias_name)
 
- index = 0
- while index < alias_name.length
+def alias(string)
 
-  if alias_name[index] == "z"
-    alias_name[index] = "a"
-  elsif alias_name[index] != " "
-    alias_name[index] = alias_name[index].next
+  new_alias = []
+
+  string.each_char do |i|
+    if i == "z"
+      new_alias.push  "a"
+    elsif i == 'a'|| i =='e'||i == 'i'|| i == 'o'|| i == 'u'|| i == " "
+      new_alias.push i.gsub(/[aeiou]/, 'a' => 'e', 'e' => 'i', 'i' => 'o', 'o' => 'u', 'u' => 'a')
+    else
+      new_alias.push i.next
+    end
   end
 
-  index += 1
- end
-
- alias_name
+  new_alias.join("")
 
 end
 
-puts "Name please?"
 
-spy_name = gets.chomp
+# Get users full name
+puts "Spy name please:"
 
-alias_key(spy)
+user_name = gets.chomp
+
+alias(user_name)
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
