@@ -1,22 +1,22 @@
-<<<<<<< HEAD
-# Algorithm for puppies
+# create a class for Puppy
+class Puppy
+end
+# add an instances to the class
+# give instances arguments with proper data type
+  # the dog type as a string
+  # a description of the dog as a hash
+    # name of dog
+    # color of coat
+    # eye color
+    # age
+# the personality the dog as an array
+ # personality traits
 
-# identify the type of dog breed
-# a description of the dog
-  # name of dog
-  # color of coat
-  # eye color
-  # age
-  # immunization status
+dog_type = Puppy.new
+p dog_type = "Shiba Inu"
 
-# how it behaves and its mannerisms
-  # personality type
-  # is he/she active?
-  # get along with others?
-=======
-#Algorithm for puppies
+description = Puppy.new
+p description = {coat_color: "orange and white", eye_color: "hazel", age: 2}
 
-#identify the type of dog
-#a description of the dog
-# how it behaves and its mannerisms
->>>>>>> 91b77faf774f59ae6d668c5728d3f7555709f8c5
+personality = Puppy.new
+p personality = ["bubbly", "sleepy", "hungry"]
