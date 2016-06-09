@@ -9,9 +9,9 @@ def add_to_array(x, y)
   p two_arrays
 end
 
-add_to_array([1, 2, 4], 9)
-add_to_array(["Monday", "Wednesday", "Friday"], true )
-
+p add_to_array([1, 2, 4], 9)
+p add_to_array(["Monday", "Wednesday", "Friday"], true )
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 my_array = []
 
 p my_array
