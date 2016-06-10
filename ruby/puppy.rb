@@ -1,4 +1,11 @@
 # create a class for Puppy
+class Puppy
+end
+
+tiger = Puppy.new
+tofu = Puppy.new
+Miso = Puppy.new
+
 # add an instances to the class
 # give instances arguments with proper data type
   # the dog type as a string
