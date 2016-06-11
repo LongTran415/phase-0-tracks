@@ -1,4 +1,5 @@
 # Method to create a list
+#
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
 # steps:
   # create an empty hash and move string input into hash.
