@@ -63,6 +63,10 @@ end
   # print value pair with added prettify methods
 # output: no output, just changes the list
 
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# Driver code
 list = create_list("apples peaches limes")
 #=>{:apples=>1, :peaches=>1, :limes=>1}
 
@@ -74,8 +78,6 @@ update_item_from_list(list, "apples",10)
 
 remove_item_from_list(list, "apples")
 #=>{:peaches=>1, :limes=>1, :"Blue bottle coffee"=>5}
-
-#prettify_item_from_list(list)
 
 create_list("Lemonade Tomatoes Onions Ice_Cream")
 
@@ -95,6 +97,9 @@ prettify_item_from_list(new_list)
 
 puts grocery_list
 
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# Reflect
 
 #What did you learn about pseudocode from working on this challenge?
   # I learned that it really helps you define your input and output,

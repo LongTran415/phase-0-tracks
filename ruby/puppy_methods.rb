@@ -72,3 +72,5 @@ kitten_arry.each do |kitten|
   kitten.nap_time
   kitten.jump_on_laptop
 end
+
+p kitten_arry

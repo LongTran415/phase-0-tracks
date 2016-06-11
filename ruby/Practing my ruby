@@ -1,0 +1,72 @@
+# def ask_yes_no_question(question)
+#   puts question
+#
+#   user_input = gets.chomp
+#
+#   is_answer_yes = false
+#
+#   if user_input == "yes"
+#     is_answer_yes = true
+#   end
+#   is_answer_yes
+# end
+#
+# def answer_for_yes_no(boolean, message)
+#   if boolean == true
+#     puts message
+#   else
+#     puts "Sorry bout that!"
+#   end
+# end
+#
+# feeling_good = ask_yes_no_question("Hello how are you?")
+# good_day = ask_yes_no_question("Did you have a good day?")
+# answer_for_yes_no(feeling_good,"Glad you are feeling good!")
+# answer_for_yes_no(good_day, "Glad you are having a good day!")
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# Classes
+
+#Our reindeer needs state:
+  # name
+  # location
+
+
+class Reindeer
+
+  def initialize(name)
+    @name = name
+    @location = "the North Pole"
+  end
+
+  def take_off(alititute)
+    puts "#{@name} took off."
+    puts "#{@name} Ascended to #{alititute}"
+  end
+
+  def land(location)
+    puts "Landed safely in #{location}"
+    @location = location
+  end
+
+  def about
+    puts "Name: #{@name}"
+    puts "Location: #{@location}"
+  end
+
+end
+
+  reindeer = Reindeer.new("Blitzen")
+  reindeer.about
+  reindeer.take_off(3000)
+  reindeer.land("Bombay")
+  reindeer.about
+
+
+  reindeer = Reindeer.new("Rudolph")
+  reindeer.about
+  reindeer.take_off(10000)
+  reindeer.land("Pairs")
+  reindeer.about
