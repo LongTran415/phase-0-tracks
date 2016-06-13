@@ -1,8 +1,4 @@
 
-# needs a state
-  # gender
-  # ethnicity
-  # reindeer_ranking
 
 class Santa
 attr_reader :name, :ice_cream
@@ -66,6 +62,16 @@ attr_accessor :name, :ice_cream
 
 end
 
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# santa program algorithm
+ # create an array and add wanted instances
+ # loop through array and call methods on each one randomly
+ # set age range from 1..140
+ # loop the program to test 1000 santas
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # driver code for initializing santas
 
@@ -85,7 +91,9 @@ santa.about
 santa.speak
 santa.eat_milk_and_cookies("chocolate, chocolate chip")
 
-# utilizing arrays
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# utilizing arrays for initializing santas
 
 santas = []
 
@@ -100,9 +108,24 @@ example_ice_cream = ["Vanilla", "Caramel", "Strawberry", "Neapolitan", "", "Choc
 
 example_names = ["Charlie", "Kim", "Rupert", "Mehul", "", "Lisa", "Bart"]
 
-example_age = [14, 45, 55, 21, 28, 33, 4]
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+# looping through the program, calling methods on
+# each instance.
 
-example_genders.length.times do |i|
-  santas << santa = Santa.new(example_genders[i], example_ethnicities[i], example_hair_color[i], example_age[i], example_ice_cream[i], example_names[i]).about
+example_age = rand(0..140)
+
+index = 0
+
+while index < 1000
+  example_genders.length.times do |i|
+  santas << santa = Santa.new(example_genders.sample,
+    example_ethnicities.sample,
+    example_hair_color.sample, example_age,
+    example_ice_cream.sample,
+    example_names.sample).about
+    santas.each {|age| example_age = rand(0..140)}
+    index += 1
+  end
+
 end
