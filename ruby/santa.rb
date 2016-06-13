@@ -2,23 +2,29 @@
 
 class Santa
 attr_reader :name, :ice_cream
-attr_accessor :name, :ice_cream
+attr_accessor :name, :ice_cream, :hair_color
 
   def initialize (gender, ethnicity, hair_color, age, ice_cream, name)
      puts "Initializing Santa instance ..."
-     @name = name
      @gender = gender
      @ethnicity = ethnicity
      @hair_color = hair_color
      @age = age
      @ice_cream = ice_cream
+     @name = name
+     @greeting = "Says Ho, ho, ho! Happy holidays!"
 
   end
 
-  def reindeer_fav_sorter(arry)
-    arry.sort_by = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-  end
+  def reindeer_sorter(rank)
+    @reindeer_rank = rank
+    rank =  ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+    puts "These are my favorite reindeer starting with my favorite:"
+    rank.map do |index|
+      puts "#{index}"
 
+   end
+  end
 
   def age(integer)
     integer += 0
@@ -26,7 +32,7 @@ attr_accessor :name, :ice_cream
   end
 
   def speak
-    puts "#{@name} Says Ho, ho, ho! Happy holidays!"
+   @greeting = "Says Ho, ho, ho! Happy holidays!"
   end
 
   def eat_milk_and_cookies(cookie_type)
@@ -39,6 +45,9 @@ attr_accessor :name, :ice_cream
     puts "Ethnicity: #{@ethnicity}"
     puts "Ice Cream pref: #{@ice_cream}"
     puts "Age: #{@age}"
+    puts "Hair color: #{@hair_color}"
+    puts "#{@greeting}"
+    puts ""
   end
 
 
@@ -81,6 +90,8 @@ santa.age(22)
 santa.about
 santa.speak
 santa.eat_milk_and_cookies("chocolate chip")
+santa.reindeer_sorter(["Rudolph", "Dasher", "Dancer", "Prancer", "Comet", "Vixen", "Cupid", "Donner", "Blitzen"])
+
 
 
 santa = Santa.new("male", "Merman", "Green", 21, "Banana nut", "Luffy")
@@ -124,7 +135,10 @@ while index < 1000
     example_hair_color.sample, example_age,
     example_ice_cream.sample,
     example_names.sample).about
+
     santas.each {|age| example_age = rand(0..140)}
+
+
     index += 1
   end
 
