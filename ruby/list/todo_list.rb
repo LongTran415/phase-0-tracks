@@ -1,0 +1,20 @@
+class TodoList
+	attr_accessor :get_items
+
+	def initialize(list)
+		@get_items = list
+	end
+
+	def add_item(new_item)
+		@get_items << new_item
+	end
+
+	def delete_item(del_item)
+		@get_items.delete(del_item)
+	end
+
+	def get_item(index)
+		@get_items[index]
+	end
+
+end
