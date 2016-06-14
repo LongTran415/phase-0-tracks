@@ -2,7 +2,7 @@
 
 class Santa
 attr_reader :name, :ice_cream
-attr_accessor :name, :ice_cream, :hair_color
+attr_accessor :name, :ice_cream
 
   def initialize (gender, ethnicity, hair_color, age, ice_cream, name)
      puts "Initializing Santa instance ..."
