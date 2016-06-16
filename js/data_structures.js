@@ -15,14 +15,20 @@ console.log(horse_color);
 
 // Release 2
 
-
 // literal construction
 var horse = {"Ed": "Yellow", "Rudy": "Teal", "Steven": "Violet", "Rambo": "Red", "Bob": "Purple"};
 
 
 console.log(horse);
 
+// driver code loop
+for (var key in horse) {
+  console.log(key)
+}
 
+for (var value in horse) {
+  console.log(horse[value])
+}
 
 // Release 3
 
@@ -50,8 +56,3 @@ var workCar = new Car("Pick up truck", "White");
 console.log(car_arry);
 
 onsole.log(workCar)
-
-// driver code loop
-for (var obj in horse) {
-  console.log(obj)
-}
