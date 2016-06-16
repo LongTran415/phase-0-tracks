@@ -25,23 +25,24 @@ function reverse_str(string) {
 
 // string iteration
 
-// function reverse_str2(string) {
-//   returnVal = "";
-//
-//   for (var i = string.length - 1; i >= 0; i--) {
-//     returnVal += string[i];
-//   }
-//
-//   return returnVal;
-// }
+function reverse_str2(string) {
+  returnVal = "";
+
+  for (var i = string.length - 1; i >= 0; i--) {
+    returnVal += string[i];
+  }
+
+  return returnVal;
+}
 
 string = reverse_str("hello")
-// string = reverse_str2("hello")
+string = reverse_str2("hello")
 
 // driver code
 
 console.log(string)
 
+// conditional statement
 if (1 == 1) {
   console.log(string);
 }
